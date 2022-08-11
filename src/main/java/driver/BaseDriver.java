@@ -46,6 +46,7 @@ public class BaseDriver {
         assert url != null;
 
         driver = new AndroidDriver(url, cap);
+        //PageDriver setup
         PageDriver.getInstance().setAndroiddriver(driver);
         return driver;
 
